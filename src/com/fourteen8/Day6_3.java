@@ -1,0 +1,33 @@
+//package com.fourteen8;
+//
+//import java.util.HashMap;
+//import java.util.Map;
+//
+//public class Day6_3 {
+//}
+//
+//class Solution {
+//    public int findMaxLength(int[] nums) {
+//
+//        Map<Integer, Integer> map = new HashMap<>();
+//        map.put(0, -1);
+//
+//        int cur = 0;
+//        int max = 0;
+//
+//        for (int i = 0; i < nums.length; i++) {
+//            if (nums[i] == 0)
+//                cur -= 1;
+//            else
+//                cur += 1;
+//
+//            if (map.containsKey(cur)) {
+//                max = Math.max(max, i - map.get(cur));
+//            } else {
+//                map.put(cur, i);
+//            }
+//        }
+//
+//        return max;
+//    }
+//}
